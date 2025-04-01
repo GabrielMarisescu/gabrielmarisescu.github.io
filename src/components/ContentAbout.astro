@@ -13,56 +13,55 @@ interface TechStack {
    frontend: string[];
 };
 
-type ContactType = 'github' | 'twitter' | 'linkedIn' | 'xing' | 'email';
+type ContactType = 'github'  | 'linkedIn' | 'email' ;
 
 const techStack: TechStack = {
     devOps: [
         'GitLab',
         'GitHub',
-        'Cloudflare',
-        'Docker'
+        'Azure',
+        'BitBucket',
+        'Docker',
+        'Jenkins',
     ],
     frontend: [
+        'HTML5',
+        'CSS3',
         'Angular',
         'JavaScript',
         'TypeScript',
         'TailwindCSS',
-        'PrimeNG',
         'Astro',
-        'Ionic',
-        'Stencil',
-        'Capacitor',
         'SCSS',
-        'Markdown',
-        'WordPress'
+        'React',
+        'Next.js',
+        'React Query',
+        'Redux',
+        'Material-UI',
     ],
     backend: [
-        'Supabase',
         'Node.js',
-        'Bun',
-        'Deno',
+        'Nestjs',
+        'MongoDB',
         'PostgreSQL',
-        'MySQL',
-        'S3 Storage',
-        'Resend'
+        'TypeORM',
+        'Prisma',
     ]
 };
 
 // Developer profile
 const me: Developer = {
-    name: 'Dejan Vi.',
+    name: 'Ionut Gabriel Marisescu',
     skills: [
         ...techStack.devOps,
         ...techStack.backend,
         ...techStack.frontend
     ],
     interests: [
+        'Neovim',
+        'Mechanical Spit Keyboards',
         'Open Source',
-        'Security',
-        'Privacy',
-        'Performance',
-        'Self-Hosting',
-        'Networking'
+        'Networking',
     ]
 };
 
@@ -70,15 +69,11 @@ const me: Developer = {
 const contact = (type: ContactType): string => {
     switch (type) {
         case 'github':
-            return 'https://github.com/devidevio';
-        case 'twitter':
-            return 'https://x.com/devidev_io';
+            return 'https://github.com/GabrielMarisescu';
         case 'linkedIn':
-            return 'https://www.linkedin.com/in/dejan-vi';
-        case 'xing':
-            return 'https://www.xing.com/profile/Dejan_Vintonjiv';
+            return 'https://www.linkedin.com/in/gabriel-marisescu';
         case 'email':
-            return 'hi@devidev.io';
+            return 'gabriel.lavoro10@gmail.com';
         default:
             return 'Send fax.';
     }
