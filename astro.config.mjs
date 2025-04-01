@@ -7,7 +7,7 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   output: "static",
   trailingSlash: "always",
-  site: "https://gabrielmarisescu.github.io",
+  site: "https://gabrielmarisescu.github.io/astroport/",
 
   // Single page, no prefetch needed
   prefetch: false,
@@ -16,7 +16,7 @@ export default defineConfig({
     tailwind(),
     sitemap(),
     compress({
-      CSS: true,
+      // CSS: false,
       SVG: false,
       Image: false,
       HTML: {
