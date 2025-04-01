@@ -8,7 +8,7 @@ export default defineConfig({
   output: "static",
   trailingSlash: "always",
   site: "http://gabrielmarisescu.github.io/",
-  base: "https://github.com/GabrielMarisescu/astroport",
+  base: "my-repo",
 
   // Single page, no prefetch needed
   prefetch: false,
