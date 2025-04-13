@@ -2,12 +2,18 @@
 import SocialIcon from './SocialIcon.astro';
 
 interface Social {
-    icon: 'github' | 'linkedIn' | 'twitter' | 'email' | 'xing';
+    icon: 'github' | 'linkedIn' | 'twitter' | 'email' ;
     link: string;
     title?: string;
 }
 
-const socials: Social[] = [{
+const socials: Social[] = [
+{
+    icon: 'twitter',
+    link: 'https://x.com/IWantToBeADev96',
+    title: 'View Twitter Profile'
+  },
+  {
     icon: 'github',
     link: 'https://github.com/gabrielMarisescu',
     title: 'View GitHub Profile'
