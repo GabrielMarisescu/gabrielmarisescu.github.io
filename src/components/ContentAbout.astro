@@ -13,8 +13,6 @@ interface TechStack {
    frontend: string[];
 };
 
-type ContactType = 'github'  | 'linkedIn' | 'email' ;
-
 const techStack: TechStack = {
     devOps: [
         'GitLab',
@@ -22,7 +20,6 @@ const techStack: TechStack = {
         'Azure',
         'BitBucket',
         'Docker',
-        'Jenkins',
     ],
     frontend: [
         'HTML5',
@@ -41,18 +38,8 @@ const techStack: TechStack = {
         'SolidJs',
     ],
     backend: [
-        'Nodejs',
-        'Nestjs',
-        'ExpressJs',
-        'Fastify',
+        'Golang',
         'MongoDB',
-        'PostgreSQL',
-        'MySQL',
-        'Sqlite',
-        'Kysely',
-        'Knex',
-        'TypeORM',
-        'Prisma',
     ]
 };
 
@@ -69,23 +56,9 @@ const me: Developer = {
         'Mechanical Choc Split Keyboards',
         'Open Source',
         'Networking',
+        'Hiking',
     ]
 };
-
-// Contact function
-const contact = (type: ContactType): string => {
-    switch (type) {
-        case 'github':
-            return 'https://github.com/GabrielMarisescu';
-        case 'linkedIn':
-            return 'https://www.linkedin.com/in/gabriel-marisescu';
-        case 'email':
-            return 'ionutgabrielmarisescu@gmail.com';
-        default:
-            return 'Send fax.';
-    }
-};
-
 `;
 ---
 
